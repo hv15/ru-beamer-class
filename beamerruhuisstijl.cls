@@ -26,7 +26,7 @@
 \RequirePackage{tikz}
 
 % we need this in order to get correct path for slide backgrounds
-\graphicspath{{./backgrounds/}{./../../latex/backgrounds/}}
+\graphicspath{{./backgrounds/}{./ru-beamer-class/backgrounds/}{./../../latex/backgrounds/}}
 
 \newif\ifbeamer@official
 \beamer@officialfalse
@@ -642,6 +642,7 @@
             \usebeamerfont{author}{\insertauthor\par}%
         \end{beamercolorbox}%
         \ifthenelse{\equal{\showdate}{true}}{
+        \vspace{0.25cm}%
         \begin{beamercolorbox}{date}%
             \usebeamerfont{date}{\insertdate\par}%
         \end{beamercolorbox}%
