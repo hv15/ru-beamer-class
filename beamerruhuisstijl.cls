@@ -470,6 +470,16 @@
     \end{frame}
 }%
 
+\newenvironment{clearframe}%
+ {
+  \setbeamertemplate{background}[default]
+  \setbeamercolor{background}{bg=white}
+  \begin{frame}
+ }
+ {
+  \end{frame}
+ }
+
 \ifthenelse{\equal{\tocatsectionstart}{true}}{%
   \AtBeginSection{
     \begin{frame}[c,plain,noframenumbering]
