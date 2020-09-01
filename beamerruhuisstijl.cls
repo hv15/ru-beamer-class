@@ -350,9 +350,9 @@
 \fi%
 
 %%% Itemisation stuff
-\setbeamertemplate{itemize item}{}
-\setbeamertemplate{itemize subitem}{}
-\setbeamertemplate{itemize subsubitem}{}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}{--}
+\setbeamertemplate{itemize subsubitem}[triangle]
 
 \setbeamertemplate{itemize/enumerate body begin}
   {\normalsize\renewcommand\theenumii{\theenumi\alph{enumii}}}
