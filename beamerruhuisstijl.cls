@@ -470,11 +470,13 @@
     \end{frame}
 }%
 
+
+
 \newenvironment{clearframe}%
  {
   \setbeamertemplate{background}[default]
   \setbeamercolor{background}{bg=white}
-  \begin{frame}
+  \begin{frame}[fragile,environment=clearframe]
  }
  {
   \end{frame}
